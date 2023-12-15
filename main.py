@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/api/read')
 def index():
     return jsonify({"Choo Choo": "Welcome to your Flask app 🚅 It has been changed"})
 
